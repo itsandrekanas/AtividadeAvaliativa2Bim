@@ -1,13 +1,16 @@
 //Aluno: André Luiz H. Kanashiro
-function atv1() {
-    var numero = Number(window.prompt(("Informe um numero: ")))
-    if (numero % 2 == 0 && numero % 7 == 0) {
-        window.alert("verdadeiro")
+function atv1(){
+    var num = Number(window.prompt("Digite um número: "));
+
+    if(num % 2 == 0 && num % 7 == 0){
+        result = "O valor é divisível por 2 e 7.";
+    } else {
+        result = "O valor não é divisível por 2 e 7.";
     }
-    else {
-        window.alert("false")
-    }
+
+    document.getElementById("resultado").innerHTML = result;
 }
+
 
 function atv2() {
     var num = prompt("Escolha um numero de 1 a 7:")
@@ -43,7 +46,7 @@ function atv3(){
     }
 
     function atv4(){
-        var res1 = cop * 0.25;
+        var res1 = cop * 0.025;
         var cop = window.prompt(("Informe um numero de copias: "))
 
         if(cop <= 100){
