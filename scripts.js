@@ -1,11 +1,11 @@
 //Aluno: André Luiz H. Kanashiro
-function atv1(){
+function atv_01() {
     var num = Number(window.prompt("Digite um número: "));
 
-    if(num % 2 == 0 && num % 7 == 0){
-        result = "O valor é divisível por 2 e 7.";
+    if (num % 2 == 0 || num % 7 == 0) {
+        result = "O valor é divisível por 2 ou 7.";
     } else {
-        result = "O valor não é divisível por 2 e 7.";
+        result = "O valor não é divisível por 2 ou 7.";
     }
 
     document.getElementById("resultado").innerHTML = result;
@@ -39,20 +39,22 @@ function atv2() {
     }
 }
 
-function atv3(){
+function atv3() {
     var numero = Number(window.prompt(("Informe um numero: ")))
-    for(var count=1; count<=10 ; count++)
-    document.write(numero +" x "+count+" = " + (numero*count) + "<br />");
-    }
+    for (var count = 1; count <= 10; count++)
+        document.write(numero + " x " + count + " = " + (numero * count) + "<br />");
+}
 
-    function atv4(){
-        var res1 = cop * 0.025;
-        var cop = window.prompt(("Informe um numero de copias: "))
-
-        if(cop <= 100){
-            window.alert(res1)
-        }
-        else{
-            window.alert()
-        }
+function atv4() {
+    var res1 = (cop * valorCopMenor);
+    var res2 = (cop * valorCopMaior);
+    var cop = window.prompt(("Informe um numero de copias: "))
+    var valorCopMenor = 0.25;
+    var valorCopMaior = 0.20;
+    if (cop <= 100) {
+        window.alert(res1)
     }
+    else {
+        window.alert(res2)
+    }
+}
