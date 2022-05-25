@@ -46,16 +46,15 @@ function atv3() {
 }
 
 function atv4() {
-    var res1 = (cop * valorCopMenor);
-    var res2 = (cop * valorCopMaior);
+    
     var cop = Number(window.prompt(("Informe um numero de copias: ")))
-    var valorCopMenor = 0.25;
-    var valorCopMaior = 0.20;
     if (cop <= 100) {
-        window.alert(res1)
+        var res1 = (cop * 0.25);
+        document.getElementById("resultado").innerHTML = res1
     }
     else {
-        window.alert(res2)
+        var res2 = (cop * 0.20);
+        document.getElementById("resultado").innerHTML = res2
     }
     
 }
