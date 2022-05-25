@@ -48,7 +48,7 @@ function atv3() {
 function atv4() {
     var res1 = (cop * valorCopMenor);
     var res2 = (cop * valorCopMaior);
-    var cop = window.prompt(("Informe um numero de copias: "))
+    var cop = Number(window.prompt(("Informe um numero de copias: ")))
     var valorCopMenor = 0.25;
     var valorCopMaior = 0.20;
     if (cop <= 100) {
@@ -57,4 +57,20 @@ function atv4() {
     else {
         window.alert(res2)
     }
+    
+}
+
+function atv5() {
+ var valSal = Number(window.prompt(("Informe um valor de salario: ")))
+ var valFin = Number(window.prompt(("Informe um valor de financiamento pretendido: ")))
+var match1 = (5*valSal);
+ if(valFin <= match1 ){
+    window.alert("Financiamento Concedido")
+    window.alert("Obrigado por nos consultar")
+ }else{
+    window.alert("Financiamento Negado")
+    window.alert("Obrigado por nos consultar")
+ }
+
+
 }
